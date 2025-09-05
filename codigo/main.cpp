@@ -9,6 +9,7 @@
 #include <iostream>
 #include <cassert>
 
+// Os métodos seguintes realizam a execução de cada tipo de grafo proposto
 void test_basic_graph() {
     std::cout << "Teste 1: Grafo Não Direcionado Não Ponderado" << std::endl;
     
@@ -156,4 +157,5 @@ int main() {
     }
     
     return 0;
+
 }

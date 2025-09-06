@@ -49,15 +49,15 @@ void test_directed_graph() {
     // Grafo direcionado
     graph dg(5, true); // 5 vértices, direcionado
     
-    dg.add_vertex("Root");
+    dg.add_vertex("Raiz");
     dg.add_vertex("N1");
     dg.add_vertex("N2");
     dg.add_vertex("N3");
     dg.add_vertex("N4");
     
     // Criando grafo
-    dg.add_edge(0, 1); // Root -> N1
-    dg.add_edge(0, 2); // Root -> N2
+    dg.add_edge(0, 1); // Raiz -> N1
+    dg.add_edge(0, 2); // Raiz -> N2
     dg.add_edge(1, 3); // N1 -> N3
     dg.add_edge(2, 4); // N2 -> N4
     dg.add_edge(1, 4); // N1 -> N4 (aresta adicional)
@@ -112,16 +112,16 @@ void test_weighted_directed_graph() {
     // Grafo direcionado ponderado
     weightedGraph wdg(5, true);
     
-    wdg.add_vertex("Root");
+    wdg.add_vertex("Raiz");
     wdg.add_vertex("A");
     wdg.add_vertex("B");
     wdg.add_vertex("C");
     wdg.add_vertex("D");
     
     // Construindo grafo
-    wdg.add_edge(0, 1, 10.0); // Root -> A: peso 10
-    wdg.add_edge(0, 2, 20.0); // Root -> B: peso 20
-    wdg.add_edge(0, 3, 30.0); // Root -> C: peso 30
+    wdg.add_edge(0, 1, 10.0); // Raiz -> A: peso 10
+    wdg.add_edge(0, 2, 20.0); // Raiz -> B: peso 20
+    wdg.add_edge(0, 3, 30.0); // Raiz -> C: peso 30
     wdg.add_edge(1, 2, 40.0); // A -> B: peso 40
     wdg.add_edge(1, 3, 50.0); // A -> C: peso 50
     wdg.add_edge(1, 4, 60.0); // A -> D: peso 60
